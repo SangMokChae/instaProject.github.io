@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import action.Action;
-import action.JoinProAction;
 import vo.ActionForward;
 
 /**
@@ -63,7 +63,15 @@ public class FrontController extends HttpServlet {
 		if(command.equals("/joinInsta.mem")) {
 			forward = new ActionForward();
 			forward.setPath("/jsp/joinForm.jsp");
-		} else if (command.equals(anObject))
+		}
+		
+		if(forward != null) {
+			if(forward.isRedireact()) {
+				response.sendRedirect(forward.getPath());
+			} else {
+				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
+				dispatcher.forward(request, response);
+			}
+		}
 	}
-
 }

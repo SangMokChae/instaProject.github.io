@@ -1,11 +1,11 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-<link rel="stylesheet" href="../src/css/joinForm.css">
+<link rel="stylesheet" href="src/css/joinForm.css">
 <title>Join Insta</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
     </form>
   </div>
   <div class="goto-join">
-    <span>계정이 있으신가요? <a href="gologin.log" class="goto-login__link">로그인</a></span>
+    <span>계정이 있으신가요? <a href="home.html" class="goto-login__link">로그인</a></span>
   </div>
   <div class="download-app">
     <div class="ask-download">앱을 다운로드하세요.</div>
@@ -42,6 +42,6 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="/src/js/joinBtn.js"></script>
+  <script src="src/js/joinBtn.js"></script>
 </body>
 </html>
