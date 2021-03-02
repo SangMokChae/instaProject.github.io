@@ -17,11 +17,11 @@
     <button class="instead-facebook">
       <i class="fab fa-facebook-square"></i>페이스북으로 로그인
     </button>
-    <form action="joinFormPro" method="post" name="joinInfo" class="userInfo">
+    <form action="joinProForm.mem" method="post" name="joinInfo" class="userInfo">
       <input type="text" class="peNumber" name="peNumber" placeholder="휴대폰 번호 또는 이메일 주소" required />
-      <input type="text" class="username" name="username" placeholder="성명" />
-      <input type="text" class="user-nickname" name="nickname" placeholder="사용자 이름">
-      <input type="password" class="pass" name="pass" placeholder="비밀번호">
+      <input type="text" class="user_name" name="username" placeholder="성명" />
+      <input type="text" class="user_nickname" name="nickname" placeholder="사용자 이름">
+      <input type="password" class="user_password" name="user_password" placeholder="비밀번호">
       <button class="joinBtn">가입</button>
       <span id="warning">가입하면 Instagram의 약관, 데이터 정책 및 쿠키 정책에 동의하게 됩니다</span>
     </form>

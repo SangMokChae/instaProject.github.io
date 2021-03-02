@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import action.Action;
+import action.JoinProAction;
 import vo.ActionForward;
 
 /**
@@ -63,6 +64,13 @@ public class FrontController extends HttpServlet {
 		if(command.equals("/joinInsta.mem")) {
 			forward = new ActionForward();
 			forward.setPath("/jsp/joinForm.jsp");
+		} else if(command.equals("/joinProForm.mem")) {
+			action = new JoinProAction();
+			try {
+				forward = action.execute(request, response);
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 		if(forward != null) {
