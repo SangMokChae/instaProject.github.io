@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+  width: auto;
+  height: 98vh;
+}
+
+.loginForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0.5px solid #8c8e92;
+  background-color: #ffffff;
+  width: 348px;
+  height: 358px;
+}
+
+.insta-logo {
+  margin: 25px 0;
+  font-size: 30px;
+}
+
+.insta-loginForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.insta-loginForm input {
+  width: 230px;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+  outline: none;
+  border: 0.3px solid #8c8e92;
+  background: #fafafa;
+}
+
+.loginBtn {
+  margin-top: 10px;
+  background: #b2dffc;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.instead-facebook,
+.find-password {
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+.instead-facebook {
+  color: #375185;
+}
+
+.instead-facebook > i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.find-password {
+  font-size: 12px;
+  color: black;
+}
+
+.goto-join {
+  width: 348px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.3px solid #8c8e92;
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.goto-join__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3088c3;
+}
+
+.download-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.store {
+  margin-top: 20px;
+}
+
+.store a {
+  text-decoration: none;
+}

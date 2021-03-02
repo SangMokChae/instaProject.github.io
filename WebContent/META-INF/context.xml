@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Connection>
+	<Resource name="jdbc/mySQLInstaDB"
+		auto="Container"
+		type="javax.sql.DataSource"
+		username="instadb"
+		password="insta111"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		url="jdbc:mysql://localhost:3306/instadb?serverTimezone=UTC"
+		maxActive="500"
+		maxIdle="100" />
+</Connection>

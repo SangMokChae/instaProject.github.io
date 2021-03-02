@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+}
+
+#nav {
+  padding: 13px 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+
+.insta-searchForm > input {
+  text-indent: 70px;
+  text-overflow: ellipsis;
+}
+
+.insta-searchForm > input:focus {
+  text-indent: 0px;
+}
+
+.nav-icons {
+  display: flex;
+}
+
+.nav-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin: 0 8px;
+  list-style: none;
+}

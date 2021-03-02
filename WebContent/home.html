@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="src/css/loginForm.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="loginForm">
+    <div class="insta-logo">
+      <span class="insta-logo__title">Instagram</span>
+    </div>
+    <form action="loginForm.pro" method="post" class="insta-loginForm">
+      <input type="text" name="id" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
+      <input type="password" name="pass" class="pass" placeholder="비밀번호">
+      <button class="loginBtn" class="loginBtn">로그인</button>
+    </form>
+    <a href="#" class="instead-facebook">
+      <i class="fab fa-facebook-square"></i>페이스북으로 로그인
+    </a>
+    <a href="#" class="find-password">비밀번호를 잊으셨나요?</a>
+  </div>
+  <div class="goto-join">
+    <span>계정이 없으신가요? <a href="joinInsta.mem" class="goto-join__link">가입하기</a></span>
+  </div>
+  <div class="download-app">
+    <div class="ask-download">앱을 다운로드하세요.</div>
+    <div class="store">
+      <a href="#">
+        <img src="#" alt="appleStore" class="appleStore">
+      </a>
+      <a href="#">
+        <img src="#" alt="googlePlay" class="googlePlay">
+      </a>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="/src/js/loginBtn.js"></script>
+</body>
+</html>
